@@ -1,0 +1,58 @@
+[
+    {
+        "descripcion": "Supermercado",
+        "importe": 9.1,
+        "categoria": "Alimentación",
+        "fecha": "2026-06-09",
+        "id": "ab6aacbe-a3e9-4e00-aa34-716a97be1470"
+    },
+    {
+        "descripcion": "Carga T-mobilitat",
+        "importe": 40.0,
+        "categoria": "Transporte",
+        "fecha": "2026-06-02",
+        "id": "ec934442-565e-4f8f-97de-791d1d641fc2"
+    },
+    {
+        "descripcion": "Restaurante",
+        "importe": 27.7,
+        "categoria": "Ocio",
+        "fecha": "2026-06-07",
+        "id": "0b98b547-d43f-4973-9d51-e5d32bfaed38"
+    },
+    {
+        "descripcion": "Alquiler",
+        "importe": 350.0,
+        "categoria": "Vivienda",
+        "fecha": "2026-06-01",
+        "id": "8a080a61-814b-4cec-a77e-14d14d068024"
+    },
+    {
+        "descripcion": "Seguro medico",
+        "importe": 30.0,
+        "categoria": "Salud",
+        "fecha": "2026-06-03",
+        "id": "36e170c2-5d7b-451c-bdd6-38030df5e15f"
+    },
+    {
+        "descripcion": "Libros",
+        "importe": 15.0,
+        "categoria": "Educación",
+        "fecha": "2026-06-06",
+        "id": "bb97da47-6c56-40ed-a026-90f34f10eeca"
+    },
+    {
+        "descripcion": "Indumentaria",
+        "importe": 68.5,
+        "categoria": "Compras",
+        "fecha": "2026-06-08",
+        "id": "83fddcd3-5adf-4a43-8f3c-261ccbf8ad69"
+    },
+    {
+        "descripcion": "Arreglo caldera",
+        "importe": 100.0,
+        "categoria": "Otros",
+        "fecha": "2026-06-06",
+        "id": "eaab7185-6608-4f17-bd5b-37278e5b9555"
+    }
+]
