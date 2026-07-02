@@ -1,85 +1,61 @@
-# Dashboard de gastos
+# Control de gastos
 
-Proyecto corto para practicar Python, CustomTkinter, Tkinter y SQLite.
+Aplicación de escritorio para gestionar gastos personales, creada con Python,
+CustomTkinter y SQLite.
 
 ## Funciones
 
-- Agregar, editar y eliminar gastos.
-- Buscar por descripción, categoría o fecha.
-- Guardar un presupuesto mensual.
-- Mostrar total gastado y dinero disponible.
-- Validar descripción, importe positivo y fecha.
+- Dashboard mensual con total gastado, presupuesto y saldo disponible.
+- Selectores de año (desde 2026) y mes para consultar el historial.
+- Gráficos de actividad diaria y distribución por categoría.
+- Alta, edición y eliminación de gastos.
+- Búsqueda por descripción, categoría o fecha dentro del mes seleccionado.
+- Presupuesto mensual persistente.
+- Validación de importes y fechas.
+- Navegación por secciones mediante un menú lateral.
 
-## Abrir el proyecto
+## Tecnologías
 
-1. Abre la carpeta `Dashboard` con Visual Studio Code.
-2. En VS Code, selecciona `Terminal > Nueva terminal`.
-3. Comprueba que la terminal está situada en el proyecto:
+- Python 3
+- CustomTkinter
+- Tkinter
+- SQLite
+
+## Instalación
+
+Clona el repositorio, entra en su carpeta y crea un entorno virtual:
 
 ```bash
-cd "/Users/naiaramega/Desktop/Dashboard"
-```
-
-## Ejecutar la aplicación
-
-Activa el entorno virtual:
-
-```bash
+python3 -m venv venv
 source venv/bin/activate
+python3 -m pip install -r requirements.txt
 ```
 
-Después ejecuta:
+En Windows, activa el entorno con:
+
+```powershell
+venv\Scripts\activate
+```
+
+## Ejecución
 
 ```bash
 python main.py
 ```
 
-También se puede ejecutar directamente, sin activar el entorno:
+La base de datos `gastos.db` se crea y configura automáticamente. La aplicación
+incluye datos de ejemplo únicamente durante la primera inicialización.
 
-```bash
-venv/bin/python main.py
+## Estructura
+
+```text
+Dashboard/
+├── main.py          # Interfaz, navegación, gráficos y validaciones
+├── database.py      # Acceso y operaciones SQLite
+├── gastos.db        # Base de datos local
+├── requirements.txt # Dependencias
+└── README.md
 ```
 
-Para detener el programa, cierra su ventana o pulsa `Ctrl + C` en la terminal.
-
-## Instalar CustomTkinter
-
-Este paso solo es necesario si aparece un error indicando que no existe
-`customtkinter`:
-
-```bash
-python3 -m pip install -r requirements.txt
-```
-
-## Ver la base de datos
-
-La base de datos se guarda en el archivo `gastos.db` y se crea automáticamente.
-
-Desde una terminal situada en la carpeta del proyecto, ejecuta:
-
-```bash
-sqlite3 gastos.db
-```
-
-Una vez dentro de SQLite, puedes usar estos comandos:
-
-```sql
-.tables
-.schema gastos
-SELECT * FROM gastos;
-SELECT * FROM configuracion;
-.quit
-```
-
-- `.tables`: muestra las tablas.
-- `.schema gastos`: muestra la estructura de la tabla.
-- `SELECT * FROM gastos;`: muestra todos los gastos.
-- `SELECT * FROM configuracion;`: muestra el presupuesto.
-- `.quit`: cierra SQLite.
-
-## Archivos principales
-
-- `main.py`: interfaz y validaciones.
-- `database.py`: conexión y operaciones con SQLite.
-- `gastos.db`: base de datos.
-- `requirements.txt`: dependencias del proyecto.
+Los archivos `datos.json` y `config.json` se conservan como datos heredados,
+pero la aplicación actual utiliza exclusivamente SQLite.
