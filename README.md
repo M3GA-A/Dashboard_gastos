@@ -59,3 +59,17 @@ Dashboard/
 
 Los archivos `datos.json` y `config.json` se conservan como datos heredados,
 pero la aplicación actual utiliza exclusivamente SQLite.
+
+<img width="1500" height="827" alt="inicio" src="https://github.com/user-attachments/assets/c240bfa6-031a-4408-b3eb-1d2eac4cae7d" />
+
+<img width="1509" height="827" alt="bodas" src="https://github.com/user-attachments/assets/0e485c25-8e68-49bd-a3db-655b57a814fb" />
+
+<img width="1511" height="827" alt="flores" src="https://github.com/user-attachments/assets/9af505b7-988c-4456-9c5b-82ee7273ca6e" />
+
+<img width="1508" height="827" alt="contacto" src="https://github.com/user-attachments/assets/3958fdb1-84b3-415a-abd2-5f39c1674908" />
+
+
+
+
+
+
